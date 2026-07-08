@@ -29,10 +29,9 @@ def base_slug(name: str) -> str:
 
 
 def extract_ward(address: str) -> str:
-    # 「阪神北部エリア」「兵庫県」等の地名プレフィックスを除いてから区名を抽出する
-    # （そうしないと「天王寺区」が「阪市天王寺区」のように誤って切り出される）
-    addr = re.sub(r'^[〒0-9\-]*\s*(兵庫県)?(阪神北部エリア)?', '', address or "")
-    m = re.search(r'([^\s０-９0-9〒\-−]{1,5}区)', addr)
+    # 阪神北部エリアは複数市町の合成ブロック（区がない）ため、対象市町名をward代わりに使う
+    # （slug衝突時の disambiguation 用。「阪神北部エリア」という文字列は住所に出現しない）
+    m = re.search(r'(伊丹市|宝塚市|川西市|三田市|猪名川町)', address or "")
     return m.group(1) if m else ""
 
 

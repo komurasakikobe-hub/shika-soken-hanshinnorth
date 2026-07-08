@@ -34,9 +34,9 @@ def nowrap_pipe(escaped_title):
 def slugify(name): return re.sub(r'[\\/:*?"<>|　\s・。、]', '_', name)[:60]
 
 def ward(addr):
-    m = re.search(r'阪神北部エリア\s*([^\s0-9０-９]{1,4}区)', addr or "")
-    if m: return "阪神北部エリア" + m.group(1)
-    m = re.search(r'([^\s0-9０-９]{1,4}区)', addr or "")
+    # 阪神北部エリアは複数市町の合成ブロック（区がない）のため、
+    # 「阪神北部エリア」という文字列は住所に出現しない。対象市町名を直接検出する。
+    m = re.search(r'(伊丹市|宝塚市|川西市|三田市|猪名川町)', addr or "")
     return m.group(1) if m else ""
 
 def rating(c): return float(c.get("rating", 0) or 0)
