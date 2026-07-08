@@ -18,12 +18,12 @@
 
 ## 立ち上げ進捗（2026-07-08 開始）
 - [x] 芦屋版（3つの恒久バグ修正済み最新コード）から複製・git init
-- [x] hanshinnorth_stations.py（JR宝塚線・阪急・能勢電鉄・神戸電鉄三田線 35駅）
+- [x] hanshinnorth_stations.py（Overpass APIで機械取得・84駅。手作業リストは廃止）
 - [x] clinic_collector.py：AREAS 5市町・グリッド範囲設定
 - [x] db_quality.py：複数市町対応の在圏判定に修正
 - [x] shindan.js：AREA_KEYWORDS を5市町タブに差し替え
 - [x] 全ビルドスクリプト・HTMLのブランド置換（HANSHIN-NORTH DENTAL RESEARCH）
-- [ ] データ収集（clinic_collector.py 実行中/完了確認）
+- [x] データ収集（完了：649院収集・掲載310院）＋公式サイト深掘り完了
 - [ ] 収集後の監査（7点チェック）→ slug生成 → ジオコーディング → 最寄駅計算
 - [ ] サイト生成（build_clinics → build_features → build_index → build_sitemap）
 - [ ] index.html の統計数字を実数に差し替え
