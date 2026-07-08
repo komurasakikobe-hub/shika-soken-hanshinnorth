@@ -1,0 +1,22 @@
+{
+  "_comment": "都市サイト共通の設定ファイル。都市固有の値は必ずここに集約する。このサイトは複数市町の広域ブロック（阪神北部）のため、cityは代表表記とし、areasに含む市町を列挙する。",
+  "city": "阪神北部エリア",
+  "city_short": "阪神北部",
+  "areas": ["伊丹市", "宝塚市", "川西市", "三田市", "猪名川町"],
+  "site_name": "阪神北部歯科総研",
+  "site_name_en": "HANSHIN-NORTH DENTAL RESEARCH",
+  "domain": "hanshinnorth.shikasoken.com",
+  "_domain_note": "仮ドメイン。公開前にユーザーが決定する",
+  "industry": "歯科",
+  "contact_email": "komurasaki.kobe@gmail.com",
+  "ga4_measurement_id": "",
+  "stats": {
+    "clinics_analyzed": 0,
+    "reviews_parsed": 0,
+    "sites_crawled": 0,
+    "clinics_published": 0,
+    "reviews_published": 0
+  },
+  "_stats_note": "データ収集完了後に実数を入れる",
+  "_official_stat_note": "未取得。伊丹・宝塚・川西・三田・猪名川町それぞれの令和6年医療施設調査の値が判明次第、合算してここに記録する。"
+}
