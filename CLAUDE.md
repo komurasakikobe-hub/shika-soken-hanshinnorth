@@ -9,7 +9,7 @@
 - エリアタブは**市町そのもの**が単位（駅・地区ではない）。`shindan.js`のAREA_KEYWORDSに5市町を列挙
 - `db_quality.py`の在圏判定は「対象市町名のいずれかを含むか」で判定（合成地名「阪神北部エリア」は住所に出現しないため単純一致では全滅する。阪神北部版で発見・修正済み）
 - 設定の正本：`site_config.json`＋`assets/site-config.js`。`site_config.json`にはareas配列で含む市町を明記
-- 記事生成側の設定：`AI評判設計システム/client_config_hanshinnorth.json`（使用時に client_config.json へコピー）
+- 記事生成側の設定：`AI評判設計システム/client_config_hanshinnorth.json`（daily_post.sh の CLIENT_CONFIG 環境変数で直接指定する。旧コピー差し替え運用は廃止・2026-07-10）
 - ドメイン・GA4測定IDは未定（公開前にユーザーが決定）
 
 ## 費用ルール（無料優先の原則）
