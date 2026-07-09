@@ -1,0 +1,14 @@
+公開対象: 310件
+衝突していたベースslugグループ: 3組
+ユニークslug: 310件（全件一意を確認）
+出力: /Users/komurasakishoutaira/Desktop/クロード/阪神北部歯科総研/clinic_slugs.json
+バックアップ作成: clinic_db.backup_before_station_20260709_140141.json
+latitude/longitudeへリネーム: 310院
+nearest_station付与: 310院
+公式「駅徒歩◯分」記載を検出: 0院
+✅ 医院AI Research Report 生成: 310院 / オーファン削除: 0
+✅ 特徴別カテゴリページ生成: 12カテゴリ / のべ1064院 → /Users/komurasakishoutaira/Desktop/クロード/阪神北部歯科総研/articles/features/index.html
+✅ articles/index.html と各カテゴリーページ(cat-*.html)を再生成しました
+✅ sitemap.xml 生成: 325 URL
+✅ robots.txt 生成
+=== 全工程完了 ===
