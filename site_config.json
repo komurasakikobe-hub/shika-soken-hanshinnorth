@@ -15,7 +15,6 @@
   "_domain_note": "仮ドメイン。公開前にユーザーが決定する",
   "industry": "歯科",
   "contact_email": "komurasaki.kobe@gmail.com",
-  "ga4_measurement_id": "",
   "stats": {
     "clinics_analyzed": 649,
     "reviews_parsed": 17233,
@@ -25,5 +24,10 @@
     "ai_analyzed": 257
   },
   "_stats_note": "データ収集完了後に実数を入れる",
-  "_official_stat_note": "未取得。伊丹・宝塚・川西・三田・猪名川町それぞれの令和6年医療施設調査の値が判明次第、合算してここに記録する。"
+  "_official_stat_note": "未取得。伊丹・宝塚・川西・三田・猪名川町それぞれの令和6年医療施設調査の値が判明次第、合算してここに記録する。",
+  "ga4_measurement_ids": [
+    "",
+    ""
+  ],
+  "_ga4_note": "[shika-sokenアカウントID, kokedamaアカウントID]。両方に同時計測（横展開マニュアル§2-5・2026-07-11〜）"
 }
