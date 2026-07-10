@@ -29,7 +29,7 @@
 - [ ] index.html の統計数字を実数に差し替え
 - [ ] サムネイル画像（ChatGPT無課金ルート）
 - [ ] GitHub Privateリポジトリ・Cloudflare Pages・ドメイン・GA4・Search Console（ユーザー操作）
-- [ ] 毎日投稿 launchd（時刻は他都市とずらす）
+- [ ] 毎日投稿：コラムは大阪歯科総研に全都市集約済みのため、この都市単独でのdaily_post.sh launchd化は不要（[[shared-column-policy]]）。個別記事生成が必要な場合はユーザー承認必須
 
 ## 注意（大阪版・芦屋版で踏んだ地雷 — 横展開マニュアル §3 参照）
 - slug衝突／ジオコーディング座標集約／統計数字の不一致／計測タグ入れ忘れ／医療広告ガイドライン

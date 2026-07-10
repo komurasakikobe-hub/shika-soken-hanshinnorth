@@ -580,7 +580,7 @@ main{max-width:860px;margin:0 auto;padding:clamp(36px,5vw,64px) clamp(20px,4vw,4
 {body}
   <section class="rr-cta">
     <p class="rr-cta-t">あなたに合う歯科医院は？</p>
-    <p class="rr-cta-s">症状・エリア・ご希望から、AIが{CITY_SHORT}市内 約{N_PUBLISHED:,}院を無料でマッチングします。</p>
+    <p class="rr-cta-s">症状・エリア・ご希望から、AIが{CITY_SHORT}エリア内 約{N_PUBLISHED:,}院を無料でマッチングします。</p>
     <div class="rr-cta-btns">
       <a class="rr-cta-btn" href="../shindan/index.html">AI診断を受ける（無料）</a>
       <a class="rr-cta-btn ghost" href="../features/index.html">特徴から探す</a>

@@ -131,7 +131,9 @@ def main():
             continue
         cards = "".join(card(c) for c in xs[:CAP])
         more = f'<p class="frow-more">ほか、確認できた医院は阪神北部エリア内に全{len(xs)}院あります（口コミ件数の多い順に表示）。</p>' if len(xs) > CAP else f'<p class="frow-more">阪神北部エリア内で確認できた {len(xs)}院（口コミ件数の多い順）。</p>'
-        related = CATEGORY_ARTICLES.get(cid, [])
+        # 存在しない記事ファイルへのリンク切れを防ぐ（コラムは本店集約のため都市サイトにはローカル記事が無い）
+        related = [(fn, t) for fn, t in CATEGORY_ARTICLES.get(cid, [])
+                   if os.path.exists(os.path.join(ROOT, "articles", fn))]
         related_html = ""
         if related:
             links = "".join(f'<a class="fsec-article" href="../{fn}">{nowrap_pipe(esc(t))}</a>' for fn, t in related)
@@ -257,7 +259,7 @@ h1,h2,h3,p,li{line-break:strict;text-wrap:pretty;}
   </div>
   <div class="odr-cta" style="margin-top:26px;">
     <p class="t">条件から、あなたに合う歯科医院へ</p>
-    <p class="s">ご希望の条件をもとに、{CITY_SHORT}市内 約{N_PUBLISHED:,}院からAIが無料でご案内します。</p>
+    <p class="s">ご希望の条件をもとに、{CITY_SHORT}エリア内 約{N_PUBLISHED:,}院からAIが無料でご案内します。</p>
     <div class="odr-cta-btns">
       <a class="odr-btn" href="../shindan/index.html">AI診断を受ける（無料）</a>
       <a class="odr-btn ghost" href="../../index.html">トップへ戻る</a>
